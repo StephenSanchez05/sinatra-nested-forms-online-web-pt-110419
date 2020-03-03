@@ -7,7 +7,7 @@ module FormsLab
       erb :new
     end
      
-     post '/pirate' do
+     post '/pirates' do
        @pirate = Pirate.new(params[:pirate])
        
        params[:pirate][:ship].each do |n|
